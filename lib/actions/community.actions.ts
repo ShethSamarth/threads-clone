@@ -13,7 +13,6 @@ export async function createCommunity(
   name: string,
   username: string,
   image: string,
-  bio: string,
   createdById: string
 ) {
   try {
@@ -30,7 +29,6 @@ export async function createCommunity(
       name,
       username,
       image,
-      bio,
       createdBy: user._id,
     })
 
